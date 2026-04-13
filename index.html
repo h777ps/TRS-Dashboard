@@ -95,9 +95,20 @@ onAuthStateChanged(auth, async (user) => {
     const emailEl = document.getElementById('user-email');
     if(emailEl) emailEl.textContent = user.email;
     // Charger config + lancer l'app
-    await fbLoadConfig();
-    if(window._gammes)   gammes   = window._gammes;
-    if(window._familles) familles = window._familles;
+await fbLoadConfig();
+// Gammes
+if(window._gammes && window._gammes.length > 0){
+  gammes = window._gammes;
+} else {
+  window._gammes = gammes;
+}
+// Familles
+if(window._familles && Object.keys(window._familles).length > 0){
+  familles = window._familles;
+} else {
+  window._familles = familles;
+  if(window._fbSaveConfig) window._fbSaveConfig();
+}
     renderGammes(); updateGSels(); renderGammesChart();
     renderFamList(); renderCfg(); updateTypes();
     fbListenHistory();
