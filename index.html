@@ -96,16 +96,19 @@ onAuthStateChanged(auth, async (user) => {
     if(emailEl) emailEl.textContent = user.email;
     // Charger config + lancer l'app
 await fbLoadConfig();
+
 // Gammes
 if(window._gammes && window._gammes.length > 0){
   gammes = window._gammes;
 } else {
   window._gammes = gammes;
 }
+
 // Familles
 if(window._familles && Object.keys(window._familles).length > 0){
   familles = window._familles;
 } else {
+  console.log("🔥 Injection config par défaut");
   window._familles = familles;
   if(window._fbSaveConfig) window._fbSaveConfig();
 }
