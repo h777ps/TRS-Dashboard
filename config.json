@@ -1,0 +1,106 @@
+{
+  "version": "v5",
+  "gammes": [],
+  "familles": {
+    "Pertes de vitesse": {
+      "col": "A",
+      "items": [
+        "Dépassement temps de cycle machine",
+        "Nettoyage torche",
+        "Changement buse",
+        "Changement tube contact",
+        "Changement meule",
+        "Opérateur en formation",
+        "Intervention externe",
+        "Changement de fût",
+        "Changement tresse",
+        "Défaut brûleur"
+      ]
+    },
+    "Perte disponibilité – amont": {
+      "col": "T",
+      "items": [
+        "Attente cariste",
+        "Défaut alignement",
+        "Défaut chaine d'entrée",
+        "Défaut cellule/DP"
+      ]
+    },
+    "Perte disponibilité – arrêts fabrication": {
+      "col": "B",
+      "items": [
+        "Essais",
+        "Formations",
+        "Manque effectif"
+      ]
+    },
+    "Perte disponibilité – arrêts process": {
+      "col": "C",
+      "items": [
+        "Réglage torche",
+        "Réglage générateur",
+        "Réglage paramètres soudage",
+        "Réglage capteurs / cellules"
+      ]
+    },
+    "Perte disponibilité – arrêts volontaire": {
+      "col": "P",
+      "items": [
+        "Casse-croûte",
+        "1/4 heure QEHS",
+        "Réunion",
+        "Semaine EHS",
+        "5S"
+      ]
+    },
+    "Perte disponibilité – aval": {
+      "col": "K",
+      "items": [
+        "Panne chariot évacuation",
+        "Attente cariste (aval)",
+        "Défaut alignement sortie",
+        "Saturation encours / manque place",
+        "Défaut DP sortie",
+        "Sortie manuelle DN 1000"
+      ]
+    },
+    "Perte disponibilité – changement de série": {
+      "col": "G",
+      "items": [
+        "Changement diamètre (DN)",
+        "Réglage machine après changement",
+        "Vidange machine"
+      ]
+    },
+    "Perte disponibilité – divers": {
+      "col": "Z",
+      "items": [
+        "Intervention externe (divers)"
+      ]
+    },
+    "Perte disponibilité – pannes": {
+      "col": "R",
+      "items": [
+        "Panne torche",
+        "Panne générateur",
+        "Défaut variateur",
+        "Problème alimentation fil (bourrage, blocage)",
+        "Panne meule préparation surface",
+        "Défaut capteur / codeur",
+        "Problème gaz (vide / fuite)",
+        "Défaut communication machine",
+        "Panne chaîne (entrée/sortie)",
+        "Panne manutention"
+      ]
+    },
+    "Pertes qualité": {
+      "col": "P",
+      "items": [
+        "Arc instable",
+        "Défaut soudage",
+        "Reprise soudure / retouches",
+        "Cordon non conforme"
+      ]
+    }
+  }
+}
